@@ -15,9 +15,9 @@
 </head>
     <title>President chooser</title>
     <style>
-        <?php include('index.css');
-            include('script.js');
-        ?>
+        <?php include ('Stylings/index.css');
+include ('script.js');
+?>
 </style>
 </head>
 <body>
@@ -34,58 +34,53 @@
                     <h5>What field do you want your president to focus?</h5>
                     <!-- Group of default radios - option 1 -->
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios" value="first">
-  <label class="custom-control-label" for="defaultGroupExample1">Option 1</label>
+  <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios" value="first" checked>
+  <label class="custom-control-label" for="defaultGroupExample1">Focuses on Economy</label>
 </div>
 
 <!-- Group of default radios - option 2 -->
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios" checked >
-  <label class="custom-control-label" for="defaultGroupExample2">Option 2</label>
+  <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios" value="second">
+  <label class="custom-control-label" for="defaultGroupExample2">Focuses on Military</label>
 </div>
 
 <!-- Group of default radios - option 3 -->
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="defaultGroupExample3" name="groupOfDefaultRadios">
-  <label class="custom-control-label" for="defaultGroupExample3">Option 3</label>
+  <input type="radio" class="custom-control-input" id="defaultGroupExample3" name="groupOfDefaultRadios" value="third">
+  <label class="custom-control-label" for="defaultGroupExample3">Focuses on Science and Technology</label>
 </div>
 <!-- Group of default radios - option 4 -->
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="defaultGroupExample4" name="groupOfDefaultRadios">
-  <label class="custom-control-label" for="defaultGroupExample4">Option 4</label>
+  <label class="custom-control-label" for="defaultGroupExample4">Focuses on Education</label>
 </div>
 
                         
                     </div>
                 <div class="tab">
-                    <h6>What's your city?</h6>
                     <div class="custom-control custom-radio">
-                        <h5>What is your basis in choosing a president???</h5>
+                        <h5>On what basis do you assess your presidential candidate?</h5>
                         <select class="custom-select">
                         <option selected>Open this select menu</option>
-                        <option value="1">Intuition</option>
-                        <option value="2">Influence</option>
-                        <option value="3">Critical thinking</option>
+                        <option value="1">News on tv</option>
+                        <option value="2">The family upbringing of the candidate</option>
+                        <option value="3">Attend events where the candidate is addressing the people</option>
+                        <option value="4">I research all the channels before making my choice</option>
+                        <option value="5">Number of fundraisers the candidate has done in your area</option>
                         </select>
-                        <!-- <input type="radio" id="customRadio1" name="customRadiov2" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio1">Focuses on military</label> -->
                     </div>
-
                     <div class="custom-control custom-radio"></div>
-                    
                 </div>
                 <div class="tab">
-                    <h6>What's your Favourite Shopping site?</h6>
+                    <h6>Do you think environment safety is more important than business tax revenue?</h6>
                     <select class="custom-select">
                         <option selected>Open this select menu</option>
-                        <option value="1">Intuition</option>
-                        <option value="2">Influence</option>
-                        <option value="3">Critical thinking</option>
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
                         </select>
-                    <p><input placeholder="Favourite Shopping site" oninput="this.className = ''" name="email"></p>
                 </div>
                 <div class="tab">
-                    <h6>Do you worship your choice of president?Yes or No?</h6>
+                    <h6>Do you think possession of guns should be allowed to</h6>
                     <div class="custom-control custom-radio">
   <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
   <label class="custom-control-label" for="customRadio1">Yes</label>
@@ -97,23 +92,28 @@
                         
                     </div>
                 <div class="tab">
-                    <h6>What's your Favourite Song?</h6>
-                    <p><input placeholder="Favourite Song" oninput="this.className = ''" name="uname"></p>
+                    <h6>In your opinion, do you think gun control laws and regulation should be changed?</h6>
                     <div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-  <label class="custom-control-label" for="customRadioInline1">Toggle this custom radio</label>
-</div>
-<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-  <label class="custom-control-label" for="customRadioInline2">Or toggle this other custom radio</label>
-</div>
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline1">Yes</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">No</label>
+                    </div>
                 </div>
+                
                 <div class="tab">
-                    <h6>What's your Favourite Mobile brand?</h6>
-                    <p><input placeholder="Favourite Mobile Brand" oninput="this.className = ''" name="uname"></p>
+                    <h5>Do you think there should be rules to incluce all religions in all political parties?</h5>
+
+                    <select class="custom-select">
+                        <option selected>Open this select menu</option>
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                        </select>
                 </div>
                 <div class="thanks-message text-center" id="text-message"> <img src="https://i.imgur.com/O18mJ1K.png" width="100" class="mb-4">
-                    <h3>Got the result!</h3> <span>SEE THE RESULT????</span>
+                    <h3>Got the result!</h3> <span> SEE NOW </span>
                     <input type="submit" value="Yes">
                 </div>
                 <div style="overflow:auto;" id="nextprevious">

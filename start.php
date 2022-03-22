@@ -15,8 +15,14 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  
 </head>
 <body>
+<style>
+        <?php include('Stylings/start.css');
+            
+        ?>
+</style>
 <p class="h1">Still Undecided?</p>
 
 <!--  -->
@@ -69,6 +75,36 @@
   </a>
 </div>
 
+<div id="container">
+  <form action="index.php" method="post">
+    <h1 class="logo text-center">Fancy Form</h1>
+    <div id="form-box">
+      <i id="prev-btn" class="fas fa-arrow-left"></i>
+      <input type="submit" value="">
+      <i id="next-btn" class="fa fa-arrow-circle-o-right"></i>
+      
+      <div id="input-group">
+        <input id="input-field" required>
+        <label id="input-label"></label>
+        <div id="input-progress"></div>
+      </div>
+      <div id="progress-bar"></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <button class="btn btn-default btn btn-primary mb-2 btn-lg">Begin</button>
+    </div>
+  </div>
+</div>
+    </form>
+  </div>
+
+  <script src="start.js"></script>
 
 </body>
 </html>
