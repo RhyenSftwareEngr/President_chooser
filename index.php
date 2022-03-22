@@ -62,11 +62,12 @@ include ('script.js');
                         <h5>On what basis do you assess your presidential candidate?</h5>
                         <select class="custom-select">
                         <option selected>Open this select menu</option>
-                        <option value="1">News on tv</option>
-                        <option value="2">The family upbringing of the candidate</option>
-                        <option value="3">Attend events where the candidate is addressing the people</option>
-                        <option value="4">I research all the channels before making my choice</option>
-                        <option value="5">Number of fundraisers the candidate has done in your area</option>
+                        <option value="b1">News on tv</option>
+                        <option value="b2">The family upbringing of the candidate</option>
+                        <option value="b3">Attend events where the candidate is addressing the people</option>
+                        <option value="b4">I research all the channels before making my choice</option>
+                        <option value="b5">Number of fundraisers the candidate has done in your area</option>
+                        <option value="b6" name="second_part">Click</option>
                         </select>
                     </div>
                     <div class="custom-control custom-radio"></div>
@@ -82,13 +83,13 @@ include ('script.js');
                 <div class="tab">
                     <h6>Do you think possession of guns should be allowed to</h6>
                     <div class="custom-control custom-radio">
-  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-  <label class="custom-control-label" for="customRadio1">Yes</label>
-</div>
-<div class="custom-control custom-radio">
-  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-  <label class="custom-control-label" for="customRadio2">No</label>
-</div>
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="yes_gun">
+                    <label class="custom-control-label" for="customRadio1">Yes</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="no_gun">
+                    <label class="custom-control-label" for="customRadio2">No</label>
+                    </div>
                         
                     </div>
                 <div class="tab">

@@ -35,6 +35,17 @@
 </head>
 <body>
 <?php 
+$isko = '<img src="Assets/isko.jpg"/>';
+$leni = '<img src="Assets/leni.jpg"/>';
+$manny = '<img src="Assets/manny.jpg"/>';
+$bbm = '<img src="Assets/bbm.jpg"/>';
+$leody = '<img src="Assets/leody.webp"/>';
+$ping = '<img src="Assets/ping.jpg"/>';
+
+$a=array($isko, $leni, $manny, $bbm, $leody, $ping);
+$random_keys=array_rand($a,3);
+// echo $a[$random_keys[0]]."<br>";
+
 if(isset($_POST['groupOfDefaultRadios']) && $_POST['groupOfDefaultRadios'] == "first" || $_POST['groupOfDefaultRadios'] == "third"){
     ?>
     <div class="container">
@@ -52,22 +63,22 @@ else if(isset($_POST['groupOfDefaultRadios']) && $_POST['groupOfDefaultRadios'] 
         <img class="img-responsive img-rounded" src="Assets/bbm.jpg" alt="Chania" width="460" height="345"> 
   </div>
 
-<?php  } ?>
-<?php
+<?php  } 
+else if(isset($_POST['customRadio']) && $_POST['customRadio'] == "no_gun"){  ?>
+    <h2 class="responsive-font-example">Your most likely to vote as a President is</h2>
+    <p>LEODY DEGUZMAN</p>
+    <img class="img-responsive img-rounded" src="Assets/leody.webp" alt="Chania" width="460" height="345"> 
+  <?php } 
 
-
-$isko = '<img src="Assets/isko.jpg"/>';
-$leni = '<img src="Assets/leni.jpg"/>';
-$manny = '<img src="Assets/manny.jpg"/>';
-$bbm = '<img src="Assets/bbm.jpg"/>';
-$leody = '<img src="Assets/leody.webp"/>';
-$ping = '<img src="Assets/ping.jpg"/>';
-
-$a=array($isko, $leni, $manny, $bbm, $leody, $ping);
-$random_keys=array_rand($a,3);
-echo $a[$random_keys[0]]."<br>";
-
-?>
-
+else if(isset($_POST['customRadioInline1']) && $_POST['customRadioInline1'] == "yes_control"){  ?>
+    <h2 class="responsive-font-example">Your most likely to vote as a President is</h2>
+    <p>MANNY PACQUIOA</p>
+    <img class="img-responsive img-rounded" src="Assets/manny.jpg" alt="Chania" width="460" height="345"> 
+<?php } 
+else { ?>
+    <h2 class="responsive-font-example">Your most likely to vote as a President is</h2>
+    <p>ISKO MORENO</p>
+    <img class="img-responsive img-rounded" src="Assets/isko.jpg" alt="Chania" width="460" height="345"> 
+<?php } ?>
 </body>
 </html>

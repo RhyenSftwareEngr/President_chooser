@@ -23,7 +23,10 @@
             
         ?>
 </style>
-<p class="h1">Still Undecided?</p>
+<p class="display-2 text-center">Still Undecided?</p>
+<p class="lead text-center display-5">
+  This helps you determine who's most likely the president that you will vote based on your answers in the questions
+</p>
 
 <!--  -->
 
